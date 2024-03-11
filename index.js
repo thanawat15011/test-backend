@@ -18,7 +18,7 @@ app.use(validateApiKey);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-app.use('/jenosize', jenosizeController);
+app.use('/', jenosizeController);
 app.listen(PORT, () => {
     console.log(`Server is running on port http://localhost:${PORT}`);
 });
