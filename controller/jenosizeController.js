@@ -1,11 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const firebase  = require('firebase-admin');
-const serviceAccount = require('../serviceAccountKey/test-b0915-firebase-adminsdk-brewj-44b36a9f70.json');
-
-firebase.initializeApp({
-    credential: firebase.credential.cert(serviceAccount)
-});
 
 router.get('/', (req, res) => {
     res.send('ยินดีต้อนรับสู่ API ของ Jenosize');

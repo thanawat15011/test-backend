@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3100;
 const validateApiKey = (req, res, next) => {
     const apiKey = req.headers['api-key'];
-    if (apiKey === 'test') {
+    if (apiKey === 'Jenosize') {
         next(); 
     } else {
         res.status(401).send('Unauthorized');
